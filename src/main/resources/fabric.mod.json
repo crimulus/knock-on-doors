@@ -5,7 +5,9 @@
 	"name": "Knock on Doors",
 	"description": "Mod allowing for a knocking noise similar to zombine's when a player attacks a door.",
 	"authors": [
-		"blodhgarm"
+		"blodhgarm",
+        "Azyrod",
+        "JNatheriver"
 	],
 	"contributors": [
 		"froyo4u",
