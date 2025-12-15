@@ -1,4 +1,4 @@
-package io.blodhgarm.knock_on_doors;
+package com.crimulus.knock_on_doors;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

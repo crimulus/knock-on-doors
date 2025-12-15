@@ -1,4 +1,4 @@
-package io.blodhgarm.knock_on_doors;
+package com.crimulus.knock_on_doors;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;

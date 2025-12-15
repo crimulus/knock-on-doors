@@ -4,16 +4,17 @@
 	"version": "${version}",
 	"name": "Knock on Doors",
 	"description": "Mod allowing for a knocking noise similar to zombine's when a player attacks a door.",
-	"authors": [
-		"blodhgarm",
+    "authors": [
+        "crimulus",
+        "LukeGrahamLandry"
+    ],
+    "contributors": [
         "Azyrod",
+        "blodhgarm",
+        "FEEDEMFISH",
+        "froyo4u",
         "JNatheriver"
-	],
-	"contributors": [
-		"froyo4u",
-		"FEEDEMFISH",
-		"crimulus"
-	],
+    ],
 	"contact": {
 		"sources": "https://github.com/crimulus/knock-on-doors"
 	},
@@ -22,19 +23,19 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-      "io.blodhgarm.knock_on_doors.KnockOnDoors"
+          "com.crimulus.knock_on_doors.KnockOnDoors"
 		],
 		"client": [
-			"io.blodhgarm.knock_on_doors.KnockOnDoorsClient"
+          "com.crimulus.knock_on_doors.KnockOnDoorsClient"
 		]
 	},
 	"mixins": [
 		"knock_on_doors.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.21",
-		"java": ">=17",
+		"fabricloader": ">=0.18.2",
+		"minecraft": ">=1.21.11",
+		"java": ">=21",
 		"fabric-api": "*"
 	}
 }
