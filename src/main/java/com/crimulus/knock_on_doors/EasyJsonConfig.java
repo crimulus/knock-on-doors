@@ -6,8 +6,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
 import com.mojang.logging.LogUtils;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
-import net.minecraft.resource.ResourceManager;
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.Identifier;
+import net.minecraft.server.packs.resources.ResourceManager;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 
@@ -116,11 +116,11 @@ public class EasyJsonConfig<T> implements SimpleSynchronousResourceReloadListene
 
     @Override
     public Identifier getFabricId() {
-        return Identifier.of("easy_json_config", configName.toString().replace(":", "/"));
+        return Identifier.fromNamespaceAndPath("easy_json_config", configName.toString().replace(":", "/"));
     }
 
     @Override
-    public void reload(ResourceManager manager) {
+    public void onResourceManagerReload(ResourceManager manager) {
         init();
     }
 }
